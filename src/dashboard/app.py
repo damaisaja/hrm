@@ -4,7 +4,7 @@ import numpy as np
 import plotly.graph_objects as go
 import sys, os, pyproj
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from src.road_analysis.centerline import extract_all
 from src.road_analysis.grade import process_road
