@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large files
+data/*.tif
+data/*.tiff
+temp_uploads/
+
+# OS files
+.DS_Store
+Thumbs.db

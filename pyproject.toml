@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "haulling"
+version = "0.1.0"
+description = "Mine Road Intelligence Platform — Drone Point Cloud to Fuel Saving"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.13.0",
+    "laspy[laszip]>=2.5.0",
+    "open3d>=0.18.0",
+    "geopandas>=1.0.0",
+    "shapely>=2.0.0",
+    "rasterio>=1.4.0",
+    "pyproj>=3.6.0",
+    "pyvista>=0.44.0",
+    "matplotlib>=3.8.0",
+    "plotly>=5.22.0",
+    "streamlit>=1.36.0",
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.8.0",
+    "scikit-learn>=1.5.0",
+    "openpyxl>=3.1.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.8.0",
+    "typer>=0.12.0",
+]
+
+[project.scripts]
+haulling = "main:app"
