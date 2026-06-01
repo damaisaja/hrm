@@ -26,6 +26,7 @@ def save_uploaded_file(uploaded_file, name):
 def download_file_from_url(url, name):
     if not url:
         return None
+    url = url.strip()
     import urllib.request
     import re
     
