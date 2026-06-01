@@ -42,6 +42,14 @@ def download_file_from_url(url, name):
         if "?dl=" not in url and "&dl=" not in url:
             url += "?dl=1"
             
+    # Clean/Resolve SharePoint / OneDrive links
+    elif "sharepoint.com" in url or "onedrive.live.com" in url:
+        if "?" in url:
+            if "download=1" not in url:
+                url += "&download=1"
+        else:
+            url += "?download=1"
+            
     path = os.path.join(temp_dir, name)
     req = urllib.request.Request(
         url, 
